@@ -1,4 +1,4 @@
-function conbinaciones(texto){
+function combinaciones(texto){
  
  
  if (texto.length<=2){
@@ -6,10 +6,10 @@ function conbinaciones(texto){
  }
  return texto.split("")
     .reduce((a, c, i) =>
-        a.concat(conbinaciones(texto.slice(0, i)+ texto.slice(i + 1))
+        a.concat(combinaciones(texto.slice(0, i)+ texto.slice(i + 1))
         .map(v => c + v))
     ,[]);
 }
- console.log(conbinaciones("abc"));
+ console.log(combinaciones("abc"));
 
 console.log();
