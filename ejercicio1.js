@@ -13,3 +13,5 @@ function calcularEstadoCeldas(casas, dias) {
 }
 
 console.log(calcularEstadoCeldas(casas, dias));
+
+console.log(calcularEstadoCeldas(casa, dias));
